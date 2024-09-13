@@ -1,0 +1,21 @@
+mappings:
+  - id: "Teste 1"  # Identificador do primeiro elemento
+    type: shape    # Tipo de elemento gráfico (forma)
+    field: "value1"  # Nome do campo que será monitorado no Grafana
+    rules:
+      - condition: "gt"  # Condição (maior que)
+        value: 50
+        style:
+          color: "green"  # Mudança de cor quando o valor for maior que 50
+      - condition: "lt"
+        value: 50
+        style:
+          color: "red"  # Mudança de cor quando o valor for menor que 50
+  - id: "teste2"  # Identificador do segundo elemento
+    type: shape
+    field: "value2"  # Nome do campo monitorado
+    rules:
+      - condition: "eq"
+        value: 100
+        style:
+          color: "blue"  # Cor será azul se o valor for igual a 100
